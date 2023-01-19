@@ -1,3 +1,5 @@
+import 'package:screen_design_demo/widgets/text_base.dart';
+
 import 'screen_design/screen_design.dart';
 
 void main() {
@@ -103,9 +105,8 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'You have pushed the button this many times:',
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+            TextBase(
+              message: '$_counter',
             ),
           ],
         ),
